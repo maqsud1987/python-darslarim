@@ -153,14 +153,14 @@ def kitob_info(nomi, muallif, yil, narh=None):
 
 
 
-# def oraliq(min,max,qadam):
-#     sonlar = []
-#     while min<max:
-#         sonlar.append(min)
-#         min += qadam
-#     return sonlar
-# print(oraliq(0, 10, 2))
-# print(oraliq(10, 20, 3))
+def oraliq(min,max,qadam):
+    sonlar = []
+    while min<max:
+        sonlar.append(min)
+        min += qadam
+    return sonlar
+print(oraliq(0, 10, 2))
+print(oraliq(10, 20, 3))
 
 
 

@@ -109,21 +109,47 @@
 
 # print(tub_sonlar_top(1, 100))
 
-def bahola(ismlar):
-    baholar = {}
-    while ismlar: 
-        ism = ismlar.pop()
-        baho = input(f"Talaba {ism.title()}ning bahosini kiriting :")
-        baholar[ism]= int(baho)
-    return baholar
-talabalar = ['ali','vali','salim','hakim']
-baholar = bahola(talabalar)
-print(baholar)
+# def bahola(ismlar):
+#     baholar = {}
+#     while ismlar: 
+#         ism = ismlar.pop()
+#         baho = input(f"Talaba {ism.title()}ning bahosini kiriting :")
+#         baholar[ism]= int(baho)
+#     return baholar
+# talabalar = ['ali','vali','salim','hakim']
+# baholar = bahola(talabalar)
+# print(baholar)
+
+
+# def summa(a,b):
+#     return a+b
+
+# res = summa(5, 6)
+# print(res)
 
 
 
+# nums1 = [4,8,1,10]
+
+# min = nums1[0]
+# for el in nums1:
+#     if el<min:
+#         min = el
+
+# print(min)
 
 
+#yuqoridagini funksiya orqali yozish 
+def minimal(l):
+    min_number = nums1[0]
+    for el in nums1:
+        if el< min_number:
+            min_number = el
+            
+    return min_number
+    
+nums1 = [-3,25,2.2,2.25]
+minimal(nums1)
 
 
 

@@ -140,16 +140,44 @@
 
 
 #yuqoridagini funksiya orqali yozish 
-def minimal(l):
-    min_number = nums1[0]
-    for el in nums1:
-        if el< min_number:
-            min_number = el
+# def minimal(l):
+#     min_number = nums1[0]
+#     for el in nums1:
+#         if el< min_number:
+#             min_number = el
             
-    return min_number
+#     return min_number
     
-nums1 = [-3,25,2.2,2.25]
-minimal(nums1)
+# nums1 = [-3,25,2.2,2.25]
+# min = minimal(nums1)
+# print(min)
+
+
+
+
+# def tyiltop(ism, yosh):
+#     """Foydaluvchi ismi va yoshini qaytaruvchi dastur"""
+#     return f"{ism.title()} {2020 - yosh} yoshda"
+
+# natija = tyiltop('olim', 2002)
+# print(natija)
+
+
+
+def titul_tekshir(titul):
+    if not titul:
+        return "Titul bo‘sh"
+    if len(titul) < 5:
+        return "Juda qisqa"
+    if not titul.replace(" ", "").isalpha():
+        return "Faqat harflar bo‘lishi kerak"
+    if not titul[0].isupper():
+        return "Katta harf bilan boshlansin"
+    return "Titul to‘g‘ri"
+
+
+
+
 
 
 

@@ -141,51 +141,76 @@
 
 
 
-from datetime import datetime
-def mijoz_info(ism,familiya,t_yil,t_joy,tel=None,email=None):
-    """Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, 
-    email manzili va telefon raqamini qabul qilib, lug'at ko'rinishida 
-    qaytaruvchi funksiya"""
+# from datetime import datetime
+# def mijoz_info(ism,familiya,t_yil,t_joy,tel=None,email=None):
+#     """Foydanaluvchidan ismi, familiyasi, tug'ilgan yili, tug'ilgan joyi, 
+#     email manzili va telefon raqamini qabul qilib, lug'at ko'rinishida 
+#     qaytaruvchi funksiya"""
     
-    hozirgi_yil = datetime.now().year
-    yosh = hozirgi_yil - t_yil
+#     hozirgi_yil = datetime.now().year
+#     yosh = hozirgi_yil - t_yil
     
-    info = {
-        'ism':ism,
-        'familiya':familiya,
-        'tugil_yil':t_yil,
-        'tugil_joy':t_joy,
-        'telefon':tel,
-        'email':email,
-        #'yoshi':yosh
-        }
+#     info = {
+#         'ism':ism,
+#         'familiya':familiya,
+#         'tugil_yil':t_yil,
+#         'tugil_joy':t_joy,
+#         'telefon':tel,
+#         'email':email,
+#         #'yoshi':yosh
+#         }
     
-    return info
+#     return info
     
-mijozlar = []
-while True:
-# ---------- FOYDALANUVCHIDAN MA'LUMOT OLISH ----------
-    ism = input("Ismingizni kiriting :")
-    familiya = input("Familiyangizni kiriting :")
-    tugil_yil = int(input("Tug'ilgan yilingizni kiriting :"))
-    tugil_joy = input("Tug'ilgan joyingizni kiriting :")    
-    telefon = input("Telefon raqamingizni kiriting :") or None
-    email = input("Emailingizni kiriting :") or None
-    #yosh = input("Yoshingizni kiriting :") or None
-# -------- FUNKSIYANI CHAQIRISH VA LISTGA QO'SHISH -----------
-    malumot = mijoz_info(ism, familiya, tugil_yil, tugil_joy,telefon,email)
-    mijozlar.append(malumot)
+# mijozlar = []
+# while True:
+# # ---------- FOYDALANUVCHIDAN MA'LUMOT OLISH ----------
+#     ism = input("Ismingizni kiriting :")
+#     familiya = input("Familiyangizni kiriting :")
+#     tugil_yil = int(input("Tug'ilgan yilingizni kiriting :"))
+#     tugil_joy = input("Tug'ilgan joyingizni kiriting :")    
+#     telefon = input("Telefon raqamingizni kiriting :") or None
+#     email = input("Emailingizni kiriting :") or None
+#     #yosh = input("Yoshingizni kiriting :") or None
+# # -------- FUNKSIYANI CHAQIRISH VA LISTGA QO'SHISH -----------
+#     malumot = mijoz_info(ism, familiya, tugil_yil, tugil_joy,telefon,email)
+#     mijozlar.append(malumot)
 
     
-#------------ TSIKL TO'XTATISH SHARTI -------------
-    javob = input("Davom ettirasizmi ?(ha/yoq)")
-    if javob!= "ha":
-        break
+# #------------ TSIKL TO'XTATISH SHARTI -------------
+#     javob = input("Davom ettirasizmi ?(ha/yoq)")
+#     if javob!= "ha":
+#         break
 
-#------------- MIJOZLARNI CONSOLE GA CHIQARISH ---------
-for mijoz in mijozlar:
-    print(f"Foydalanuvchi {mijoz['ism'].title()} {mijoz['familiya'].title()},{mijoz['tugil_yil']}-yil,"
-         f"{mijoz['tugil_joy'].title()} da tug'ilgan, telefoni: {mijoz['telefon']}")
+# #------------- MIJOZLARNI CONSOLE GA CHIQARISH ---------
+# for mijoz in mijozlar:
+#     print(f"Foydalanuvchi {mijoz['ism'].title()} {mijoz['familiya'].title()},{mijoz['tugil_yil']}-yil,"
+#          f"{mijoz['tugil_joy'].title()}da tug'ilgan, telefoni: {mijoz['telefon']}")
+
+
+# def kattasini_top(x,y,z):
+#     """Uchta son qabul qilib, ulardan eng kattasini qaytaruvchi funksiya """
+#     eng_katta=x 
+#     if y>x:
+#         eng_katta=y 
+#     if z>eng_katta:
+#         eng_katta=z 
+        
+#     return eng_katta
+
+# kattasini_top(6, -10, 78)
+
+def kattasi(x,y,z):
+    max = x
+    if y>=max:
+        max = y
+    if z>=max:
+        max = z
+    return max
+
+kattasi(10,20,-5)
+
+        
 
 
        

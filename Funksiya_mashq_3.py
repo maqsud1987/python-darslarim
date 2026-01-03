@@ -115,35 +115,43 @@
 # # 1 dan 1000 gacha bo‘lgan barcha tub sonlarni ekranga chiqaradi
 
 
-def fibonacci_100_gacha():
-    """100 gacha bo'lgan Fibonachchi sonlarini chiqarish"""
-    a, b = 0, 1  # birinchi ikkita son
-    fibonacci_sonlar = []
-    
-    while a <= 100:
-        fibonacci_sonlar.append(a)
-        a, b = b, a + b  # keyingi sonni hisoblash
-    
-    return fibonacci_sonlar
 
-# Natijani ko'rish
-print("100 gacha bo'lgan Fibonachchi sonlari:")
-print(fibonacci_100_gacha())
+#------Fibonachchi ketma-ketligidagi sonlar ro'yxatni qaytaruvchi funksiya----
+# def fibonacci(n):
+#     sonlar = []
+#     for x in range(n):
+#         if x==0 or x==1:
+#             sonlar.append(1)        
+#         else:
+#             sonlar.append(sonlar[x-1]+sonlar[x-2])
+#     return sonlar
 
-def fibonacci_100_gacha():
-    """100 gacha bo'lgan Fibonachchi sonlarini chiqarish"""
-    a, b = 0, 1  # birinchi ikkita son
-    fibonacci_sonlar = []
-    
-    while a <= 100:
-        fibonacci_sonlar.append(a)
-        a, b = b, a + b  # keyingi sonni hisoblash
-    
-    return fibonacci_sonlar
+# print(fibonacci(10))
 
-# Natijani ko'rish
-print("100 gacha bo'lgan Fibonachchi sonlari:")
-print(fibonacci_100_gacha())
+
+#-------RO'YXATNI LUG'ATGA UZATUVCHI FUNKSIYA-------
+# def bahola(ismlar):
+#     baholar = {} 
+#     while ismlar:
+#         ism = ismlar.pop()  
+#         baho = input(f"Talaba {ism.title()}ning bahosini qo'ying:  ")
+#         baholar[ism]=int(baho)
+#     return baholar
+
+# talabalar = ['ali','vali','salim','halim']
+# baholar = bahola(talabalar)
+# print(baholar)
+        
+def katta_harf(matnlar):
+    
+    matn = input("Matnni kiriting: ")
+    
+    
+
+
+
+
+
                 
             
         

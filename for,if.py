@@ -131,17 +131,17 @@
 
 
 
-x = int(input("Birinchi sonni kiriting: "))
-y = int(input("Ikkinchi sonni kiriting: "))
-if x>y:
-    print("Birinchi son katta")
+# x = int(input("Birinchi sonni kiriting: "))
+# y = int(input("Ikkinchi sonni kiriting: "))
+# if x>y:
+#     print("Birinchi son katta")
     
-elif x<y:
+# elif x<y:
         
-    print("Ikkinchi son katta")
+#     print("Ikkinchi son katta")
         
-else:
-    print("Ikkala son teng")
+# else:
+#     print("Ikkala son teng")
 
 
 

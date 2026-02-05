@@ -63,17 +63,7 @@
             
 
 
-def fibonacci(n):
-    songacha = []
-    for x in range(n):
-        if x ==0:
-            songacha.append(0)
-        elif x==1:
-            songacha.append(1)
-        else:
-            songacha.append(songacha[x-1]+songacha[x-2])
-    return songacha
-print(fibonacci(5))
+
 
 
 

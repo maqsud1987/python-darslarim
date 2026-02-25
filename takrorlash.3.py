@@ -70,19 +70,19 @@
 #===========================================================
 
 def bahola(ball):
-    if 90<=ball<=100:
-        return "A+"
-    if 80<=ball<90:
-        return "A"
-    if 70<=ball<80:
-        return "B+"
-    if 60<=ball<70:
-        return "B"
-    if 0<=ball<=60:
-        return "C"
-    else:
+    if ball < 0 or ball > 100:
         return "Noto'gri ball"
-    
+    elif ball >= 90:
+        return "A+"
+    elif ball >= 80:
+        return "A"
+    elif ball >= 70:
+        return "B+"
+    elif ball >= 60:
+        return "B"
+    else:
+        return "C"
+     
 ball = int(input("Balingizni kiriting: "))
 
 print(bahola(ball))

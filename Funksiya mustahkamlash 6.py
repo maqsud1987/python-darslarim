@@ -34,29 +34,31 @@
 # print(takrorlanuvchisini_ol(royxat))
 
 # ============ Sonning raqamlari yig‘indisini qaytaring ================
-def raqamlar_yigindisi(son):
-    son = abs(son)
-    yigindi = 0
-    while son>0:
+# def raqamlar_yigindisi(son):
+#     son = abs(son)
+#     yigindi = 0
+#     while son>0:
         
-        raqam = son%10
-        yigindi+=raqam
-        son = son // 10
-    return yigindi
+#         raqam = son%10
+#         yigindi+=raqam
+#         son = son // 10
+#     return yigindi
 
-print(raqamlar_yigindisi(-123456789))
+# print(raqamlar_yigindisi(-123456789))
+
+# # ============ Sonning raqamlari kopaytmasini qaytaring ================
+# def raqamlar_kopaytmasi(son):
+#     kopaytma = 1
+#     while son>0:
+#         raqam=son%10
+#         kopaytma*=raqam
+#         son=son//10
+#     return kopaytma
+
+# print(raqamlar_kopaytmasi(1234)) 
 
 
-def raqamlar_kopaytmasi(son):
-    kopaytma = 1
-    while son>0:
-        raqam=son%10
-        kopaytma*=raqam
-        son=son//10
-    return kopaytma
-
-print(raqamlar_kopaytmasi(1234)) 
-        
+# ============= 62.	Sonni teskari yozib qaytaring.        
         
         
     
